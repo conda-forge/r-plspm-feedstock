@@ -1,4 +1,4 @@
-{% set version = '0.4.9' %}
+{% set version = "0.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/plspm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/plspm/plspm_{{ version }}.tar.gz
-  sha256: 6627f430cf3eaf1cb82332531f72fddb7772d44abecfd5c2481086809d0b520d
+  sha256: 7a0cc6a37d1d9142fa440d6414b13c134b5c9fa93f2f6b4e00465a52e83d0c65
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1003
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,10 +46,9 @@ test:
 about:
   home: https://github.com/gastonstat/plspm
   license: GPL-3
-  summary: Partial Least Squares Path Modeling (PLS-PM) analysis for both metric and non-metric
-    data, as well as REBUS analysis.
+  summary: Partial Least Squares Path Modeling (PLS-PM) analysis for both metric and non-metric data, as well as REBUS analysis.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:

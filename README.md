@@ -1,11 +1,11 @@
-About r-plspm
-=============
+About r-plspm-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-plspm-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/gastonstat/plspm
 
 Package license: GPL-3
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-plspm-feedstock/blob/main/LICENSE.txt)
 
 Summary: Partial Least Squares Path Modeling (PLS-PM) analysis for both metric and non-metric data, as well as REBUS analysis.
 

@@ -1,4 +1,4 @@
-{% set version = "0.5.2" %}
+{% set version = "0.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/plspm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/plspm/plspm_{{ version }}.tar.gz
-  sha256: 7e225876ba3fe865eef0219e84d2b73dc119bc0ef43034b46b4e946d4e74b33a
+  sha256: a07ac5f26a962545b914398599488af0c1b19ac27f6d98b3c9a57466ed92ea18
 
 build:
   noarch: generic
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
